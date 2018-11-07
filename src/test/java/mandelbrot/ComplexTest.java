@@ -150,4 +150,11 @@ public class ComplexTest {
 
         assertEquals(c1.squaredModulus(),Math.pow(c1.real,2)+Math.pow(c1.imaginary,2));
      }
+
+    @Test
+     void testReal(){
+        assertEquals(Complex.ONE,Complex.real(1));
+        assertEquals(this.two,Complex.real(2));
+        assertEquals(new Complex (this.real,0),Complex.real(this.real));
+     }
 }
