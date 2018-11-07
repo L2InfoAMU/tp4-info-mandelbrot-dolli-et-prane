@@ -157,4 +157,14 @@ public class ComplexTest {
         assertEquals(this.two,Complex.real(2));
         assertEquals(new Complex (this.real,0),Complex.real(this.real));
      }
+
+     @Test
+    void testMultiply(){
+        Complex z1 = new Complex(2,3);
+        Complex z2 = new Complex(4,5);
+
+        assertEquals(new Complex(2,2),onePlusI.multiply(two));
+        assertEquals(new Complex(-7,22),z1.multiply(z2));
+        assertEquals(new Complex(-1,5),onePlusI.multiply(z1));
+    }
 }
