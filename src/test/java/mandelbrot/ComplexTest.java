@@ -177,4 +177,11 @@ public class ComplexTest {
         assertEquals(new Complex(2,11),complexNum.pow(3));
 
     }
+
+    @Test
+    void testScale(){
+        assertEquals(new Complex(2,2),onePlusI.scale(2));
+        assertEquals(new Complex(3,0),Complex.ONE.scale(3));
+        assertEquals(new Complex(2,0) ,two.scale(1));
+    }
 }
