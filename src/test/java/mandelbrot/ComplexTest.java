@@ -143,4 +143,11 @@ public class ComplexTest {
         assertEquals(falseValue1.equals(falseValue2),false);
 
      }
+
+     @Test
+    void testSquaredModulus(){
+        Complex c1 = new Complex (real,imaginary);
+
+        assertEquals(c1.squaredModulus(),Math.pow(c1.real,2)+Math.pow(c1.imaginary,2));
+     }
 }
